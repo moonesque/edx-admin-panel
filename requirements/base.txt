@@ -8,13 +8,29 @@ django==2.2.24
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
+    #   django-crum
     #   django-model-utils
     #   djangorestframework
+    #   edx-django-utils
+django-crum==0.7.9
+    # via edx-django-utils
 django-model-utils==4.1.1
     # via -r requirements/base.in
+django-waffle==2.2.1
+    # via edx-django-utils
 djangorestframework==3.12.4
     # via -r requirements/base.in
+edx-django-utils==4.2.0
+    # via -r requirements/base.in
+newrelic==6.4.4.161
+    # via edx-django-utils
+pbr==5.6.0
+    # via stevedore
+psutil==5.8.0
+    # via edx-django-utils
 pytz==2021.1
     # via django
 sqlparse==0.4.1
     # via django
+stevedore==3.3.0
+    # via edx-django-utils
