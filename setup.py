@@ -95,6 +95,6 @@ setup(
         "lms.djangoapp": [
             "iknito_admin_panel = iknito_admin_panel.apps:IknitoAdminPanelConfig",
         ],
-        "cms.djangoapp": [],
+        "cms.djangoapp": ["iknito_admin_panel = iknito_admin_panel.apps:IknitoAdminPanelConfig"],
     },
 )
